@@ -121,7 +121,7 @@ const Navbar = () => {
           {/* Social icons — right (desktop) */}
           <div className="hidden md:flex items-center gap-2 bg-gray-900/80 backdrop-blur-sm px-3 py-2 rounded-full border border-cyan-500/30">
             <a
-              href="https://wa.me/8801744546898"
+              href="https://wa.me/8801738887851"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-full text-gray-400 hover:text-white hover:bg-green-500/80 hover:shadow-lg hover:shadow-green-500/50 transition-all duration-300"
@@ -129,7 +129,7 @@ const Navbar = () => {
               <FaWhatsapp className="w-4 h-4" />
             </a>
             <a
-              href="https://github.com/0xzahed"
+              href="https://github.com/Md-Bari"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-full text-gray-400 hover:text-white hover:bg-cyan-500/80 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
@@ -137,7 +137,7 @@ const Navbar = () => {
               <FaGithub className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/0xzahed/"
+              href="https://www.linkedin.com/in/rofiqul-bari-shitol-414965274/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-full text-gray-400 hover:text-white hover:bg-cyan-500/80 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
@@ -145,7 +145,7 @@ const Navbar = () => {
               <FaLinkedin className="w-4 h-4" />
             </a>
             <a
-              href="mailto:0xzahed@gmail.com"
+              href="mailto:rofiqulbari01@gmail.com"
               className="p-1.5 rounded-full text-gray-400 hover:text-white hover:bg-cyan-500/80 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
             >
               <HiOutlineMail className="w-4 h-4" />
@@ -204,7 +204,7 @@ const Navbar = () => {
             <div className="px-4 pb-6 pt-4 border-t border-blue-500/20">
               <div className="flex items-center justify-center gap-4">
                 <a
-                  href="https://github.com/0xzahed"
+                  href="https://github.com/Md-Bari"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-gray-900/80 border border-blue-500/30 text-gray-300 hover:text-white hover:bg-indigo-600 transition-all"
@@ -212,7 +212,7 @@ const Navbar = () => {
                   <FaGithub className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/0xzahed/"
+                  href="https://www.linkedin.com/in/rofiqul-bari-shitol-414965274/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-gray-900/80 border border-blue-500/30 text-gray-300 hover:text-white hover:bg-indigo-600 transition-all"
@@ -220,7 +220,7 @@ const Navbar = () => {
                   <FaLinkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="mailto:0xzahed@gmail.com"
+                  href="mailto:rofiqulbari01@gmail.com"
                   className="p-3 rounded-full bg-gray-900/80 border border-blue-500/30 text-gray-300 hover:text-white hover:bg-indigo-600 transition-all"
                 >
                   <HiOutlineMail className="w-6 h-6" />

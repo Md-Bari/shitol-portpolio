@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  SiFastapi,
+  SiFlask,
+  SiN8N,
   SiMongodb,
-  SiExpress,
   SiReact,
-  SiNodedotjs,
   SiJavascript,
   SiTailwindcss,
   SiHtml5,
@@ -17,20 +18,33 @@ import {
   SiC,
   SiCplusplus,
   SiPython,
+  SiPhp,
+  SiLaravel,
   SiMysql,
-  SiDjango,
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 
 const Skills = () => {
   const skillCategories = [
     {
+      title: "AI Development",
+      gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
+      skills: [
+        { name: "Python", icon: SiPython, color: "#3776AB", level: 90 },
+        { name: "FastAPI", icon: SiFastapi, color: "#009688", level: 88 },
+        { name: "RESTful API", icon: VscCode, color: "#22C55E", level: 86 },
+        { name: "Flask", icon: SiFlask, color: "#FFFFFF", level: 82 },
+        { name: "Local LLM", icon: VscCode, color: "#A855F7", level: 84 },
+        { name: "AI Automation", icon: VscCode, color: "#F59E0B", level: 83 },
+        { name: "n8n", icon: SiN8N, color: "#EF4444", level: 80 },
+      ],
+    },
+    {
       title: "Backend Development",
       gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
       skills: [
-        { name: "Node.js", icon: SiNodedotjs, color: "#339933", level: 85 },
-        { name: "Express.js", icon: SiExpress, color: "#FFFFFF", level: 80 },
-        { name: "Django", icon: SiDjango, color: "#092E20", level: 75 },
+        { name: "Laravel", icon: SiLaravel, color: "#FF2D20", level: 85 },
+        { name: "PHP", icon: SiPhp, color: "#777BB4", level: 82 },
         { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 82 },
         { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 78 },
         { name: "Firebase", icon: SiFirebase, color: "#FFCA28", level: 75 },
@@ -58,7 +72,7 @@ const Skills = () => {
         { name: "Figma", icon: SiFigma, color: "#F24E1E", level: 70 },
         { name: "C", icon: SiC, color: "#A8B9CC", level: 75 },
         { name: "C++", icon: SiCplusplus, color: "#00599C", level: 72 },
-        { name: "Python", icon: SiPython, color: "#3776AB", level: 80 },
+        { name: "PHP", icon: SiPhp, color: "#777BB4", level: 80 },
       ],
     },
   ];

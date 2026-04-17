@@ -7,7 +7,6 @@ import {
   Send,
   Github,
   Linkedin,
-  Facebook,
 } from "lucide-react";
 
 const Contact = () => {
@@ -35,15 +34,15 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "zahed04x@gmail.com",
-      link: "mailto:zahed04x@gmail.com",
+      value: "rofiqulbari01@gmail.com",
+      link: "mailto:rofiqulbari01@gmail.com",
       gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+880 1744-546898",
-      link: "tel:+8801744546898",
+      value: "+880 1738 887851",
+      link: "tel:+8801738887851",
       gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
     },
     {
@@ -58,20 +57,14 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Github,
-      link: "https://github.com",
+      link: "https://github.com/Md-Bari",
       label: "GitHub",
       gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
     },
     {
       icon: Linkedin,
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/rofiqul-bari-shitol-414965274/",
       label: "LinkedIn",
-      gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
-    },
-    {
-      icon: Facebook,
-      link: "https://facebook.com",
-      label: "Facebook",
       gradient: "from-teal-400 via-[#14B8A6] to-emerald-500",
     },
   ];
@@ -126,7 +119,7 @@ const Contact = () => {
             transition={{ delay: 0.3 }}
             className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto px-4"
           >
-            Let's discuss your project and bring your ideas to life
+            Let&apos;s discuss your project and build something useful together
           </motion.p>
         </motion.div>
 

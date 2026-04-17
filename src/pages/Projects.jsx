@@ -24,7 +24,7 @@ const Projects = () => {
         "A full-stack MERN platform for managing electricity, gas, water, and internet bills with secure payments and real-time tracking.",
       tags: ["React.js", "Tailwind", "Firebase", "Express.js", "MongoDB", "React Router"],
       image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=700&h=460&fit=crop",
-      github: "https://github.com/0xzahed/SmartBills-client",
+      github: "https://github.com/Md-Bari",
       live: "https://smartbills-7b06f.web.app/",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
@@ -37,7 +37,7 @@ const Projects = () => {
         "An e-commerce platform with cart, checkout, authentication, and admin features built with Next.js and MongoDB.",
       tags: ["Next.js", "React.js", "Tailwind", "Firebase", "Express.js", "MongoDB"],
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=700&h=460&fit=crop",
-      github: "https://github.com/0xzahed/deshicart",
+      github: "https://github.com/Md-Bari",
       live: "https://deshicart.vercel.app/",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
@@ -50,7 +50,7 @@ const Projects = () => {
         "A React-based skill-learning platform connecting learners with expert tutors through an intuitive booking system and AI chatbot.",
       tags: ["React.js", "React Router", "Firebase", "Tailwind CSS", "DaisyUI", "Framer Motion"],
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&h=460&fit=crop",
-      github: "https://github.com/0xzahed/Skill-Swap",
+      github: "https://github.com/Md-Bari",
       live: "https://skillswap-d2870.web.app/",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
@@ -288,7 +288,7 @@ const Projects = () => {
 
         {/* Footer CTA */}
         <div className="mt-20 text-center">
-          <a href="https://github.com/0xzahed" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/Md-Bari" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-teal-500 via-[#14B8A6] to-teal-600 backdrop-blur-xl border border-teal-400/50 text-white font-semibold rounded-full hover:from-teal-400 hover:via-teal-500 hover:to-emerald-500 hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300 group"
           >
             <FaGithub className="w-5 h-5" />

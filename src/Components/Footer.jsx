@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Facebook, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,18 +15,14 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/abuzahed", label: "GitHub" },
+    { icon: Github, href: "https://github.com/Md-Bari", label: "GitHub" },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/abuzahed",
+      href: "https://www.linkedin.com/in/rofiqul-bari-shitol-414965274/",
       label: "LinkedIn",
     },
-    {
-      icon: Facebook,
-      href: "https://facebook.com/abuzahed",
-      label: "Facebook",
-    },
-    { icon: Mail, href: "mailto:zahed04x@gmail.com", label: "Email" },
+    { icon: Phone, href: "tel:+8801738887851", label: "Phone" },
+    { icon: Mail, href: "mailto:rofiqulbari01@gmail.com", label: "Email" },
   ];
 
   const handleScrollClick = (e, scrollTo) => {
@@ -43,25 +39,21 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gray-950 border-t border-teal-500/20">
-      {/* Animated gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-teal-500 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6 md:mb-8">
-          {/* About section */}
           <div>
             <h3 className="text-xl sm:text-2xl font-bold mb-3 md:mb-4 text-white">
-              Abu Zahed
+              Rofiqul Bari
             </h3>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-              MERN Stack Developer passionate about building modern web
-              applications with cutting-edge technologies. Let's create
-              something amazing together!
+              Data Engineer, AI developer, and full stack builder focused on
+              practical machine learning systems, scalable APIs, and polished
+              digital products.
             </p>
           </div>
 
-          {/* Quick links */}
           <div>
             <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 bg-linear-to-r from-teal-400 via-[#14B8A6] to-emerald-500 bg-clip-text text-transparent">
               Quick Links
@@ -90,13 +82,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social links */}
           <div>
             <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 bg-linear-to-r from-teal-400 via-[#14B8A6] to-emerald-500 bg-clip-text text-transparent">
               Connect
             </h3>
             <p className="text-gray-400 text-xs sm:text-sm mb-3 md:mb-4">
-              Follow me on social media for updates and tech insights.
+              Reach out for collaboration, project work, or AI engineering
+              opportunities.
             </p>
             <div className="flex gap-3 md:gap-4">
               {socialLinks.map((social, index) => (
@@ -115,20 +107,16 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="h-px bg-linear-to-r from-transparent via-teal-500/30 to-transparent mb-6 md:mb-8"></div>
 
-        {/* Bottom section */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
-            <p className="text-gray-500 text-xs sm:text-sm font-bold flex items-center gap-1 text-center md:text-left">
-              © {currentYear} Abu Zahed{" "}
-              <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500 fill-red-500" />
-            </p>
-              
-          </div>
-              </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
+          <p className="text-gray-500 text-xs sm:text-sm font-bold flex items-center gap-1 text-center md:text-left">
+            © {currentYear} Rofiqul Bari
+            <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500 fill-red-500" />
+          </p>
+        </div>
+      </div>
 
-              {/* Decorative gradient orbs */}
       <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute top-0 right-1/4 w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
     </footer>

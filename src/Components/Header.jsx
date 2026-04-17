@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { gsap } from "gsap";
 import profilePhoto from "../assets/Profile-photo.png";
+import resumePdf from "../assets/resume.pdf";
+
+const resumeDownloadPath = resumePdf;
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -115,7 +118,10 @@ const Header = () => {
                 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
                 style={{ opacity: 0 }}
               >
-                Hi, I'm <span className="bg-linear-to-r from-cyan-400 via-violet-400 to-emerald-400 bg-clip-text text-transparent">Md Rofiqul bari Shitol</span>
+                Hi, I'm{" "}
+                <span className="bg-linear-to-r from-cyan-400 via-violet-400 to-emerald-400 bg-clip-text text-transparent">
+                  Md Rofiqul Bari
+                </span>
               </h1>
               <h2
                 ref={subheadingRef}
@@ -149,6 +155,14 @@ const Header = () => {
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 View Resume
               </Link>
+              <a
+                href={resumeDownloadPath}
+                download="md-rofiqul-bari-resume.pdf"
+                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm border border-white/15 text-white text-sm sm:text-base font-semibold rounded-full hover:border-cyan-400/50 hover:bg-white/10 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+              >
+                <Download className="w-4 h-4 sm:w-5 sm:h-5" />
+                Download PDF
+              </a>
             </div>
 
             {/* Social Links */}
@@ -161,7 +175,7 @@ const Header = () => {
               </span>
               <div className="flex gap-2 sm:gap-3" style={{ opacity: 0 }}>
                 <a
-                  href="https://github.com/0xzahed"
+                  href="https://github.com/Md-Bari"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 sm:p-3 rounded-full bg-gray-800/80 border border-blue-500/20 text-gray-300 hover:text-white hover:bg-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-110"
@@ -169,7 +183,7 @@ const Header = () => {
                   <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/rofiqul-bari-shitol-414965274/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 sm:p-3 rounded-full bg-gray-800/80 border border-blue-500/20 text-gray-300 hover:text-white hover:bg-indigo-600 hover:border-blue-500 transition-all duration-300 hover:scale-110"
@@ -177,7 +191,7 @@ const Header = () => {
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a
-                  href="mailto:zahed04x@gmail.com"
+                  href="mailto:rofiqulbari01@gmail.com"
                   className="p-2 sm:p-3 rounded-full bg-gray-800/80 border border-blue-500/20 text-gray-300 hover:text-white hover:bg-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-110"
                 >
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -208,7 +222,7 @@ const Header = () => {
                 <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 sm:border-4 border-gray-800">
                   <img
                     src={profilePhoto}
-                    alt="Abu Zahed"
+                    alt="Md Rofiqul Bari"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
