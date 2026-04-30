@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaGithub } from "react-icons/fa";
 import { Zap, ArrowUpRight } from "lucide-react";
+import bsmsImage from "../assets/bsms.png";
+import rmsImage from "../assets/rms.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,25 +20,35 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "SmartBills",
-      subtitle: "(Bill Management Platform)",
+      title: "Building Nad Society Management System (BSMS)",
+      subtitle: "(Bills, Maintenance and Security Management Platform)",
       description:
         "A full-stack MERN platform for managing electricity, gas, water, and internet bills with secure payments and real-time tracking.",
+      highlights: [
+        "Role-based dashboard for users and admin",
+        "Online bill payment with transaction history",
+        "Real-time bill status updates and due-date tracking",
+      ],
       tags: ["React.js", "Tailwind", "Firebase", "Express.js", "MongoDB", "React Router"],
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=700&h=460&fit=crop",
-      github: "https://github.com/Md-Bari",
+      image: bsmsImage,
+      github: "https://github.com/Md-Bari/bsms-project",
       live: "https://smartbills-7b06f.web.app/",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
     },
     {
       id: 2,
-      title: "DeshiCart",
-      subtitle: "(E-Commerce Platform)",
+      title: "Restaurent Management System (RMS)",
+      subtitle: "(Property Rental and Management Platform)",
       description:
-        "An e-commerce platform with cart, checkout, authentication, and admin features built with Next.js and MongoDB.",
-      tags: ["Next.js", "React.js", "Tailwind", "Firebase", "Express.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=700&h=460&fit=crop",
+        "An e-commerce platform with cart, checkout, authentication, and admin features built with Next.js and PostgreSQL.",
+      highlights: [
+        "Product browsing with category-based filtering",
+        "Cart and checkout flow with secure authentication",
+        "Admin panel for product and order management",
+      ],
+      tags: ["Next.js", "Laravel", "Tailwind", "Php", "Stripe","Ai", "PostgreSQL"],
+      image: rmsImage,
       github: "https://github.com/Md-Bari",
       live: "https://deshicart.vercel.app/",
       accent: "#14B8A6",
@@ -247,6 +259,13 @@ const Projects = () => {
                     <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-5">
                       {project.description}
                     </p>
+                    {project.highlights?.length > 0 && (
+                      <ul className={`text-sm text-gray-300 space-y-2 mb-6 ${!isEven ? "lg:text-right" : ""}`}>
+                        {project.highlights.map((item, i) => (
+                          <li key={i}>{`• ${item}`}</li>
+                        ))}
+                      </ul>
+                    )}
 
                     {/* Tags */}
                     <div className={`flex flex-wrap gap-2 mb-7 ${!isEven ? "lg:justify-end" : ""}`}>
