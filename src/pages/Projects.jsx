@@ -32,7 +32,7 @@ const Projects = () => {
       tags: ["React.js", "Tailwind", "Firebase", "Express.js", "MongoDB", "React Router"],
       image: bsmsImage,
       github: "https://github.com/Md-Bari/bsms-project",
-      live: "https://smartbills-7b06f.web.app/",
+      live: "https://bsms-sigma.vercel.app/admin/dashboard",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
     },
