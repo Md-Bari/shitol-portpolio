@@ -50,7 +50,7 @@ const Projects = () => {
       tags: ["Next.js", "Laravel", "Tailwind", "Php", "Stripe","Ai", "PostgreSQL"],
       image: rmsImage,
       github: "https://github.com/Md-Bari",
-      live: "https://deshicart.vercel.app/",
+      live: "https://bsms-sigma.vercel.app/admin/dashboard",
       accent: "#14B8A6",
       gradientStyle: "linear-gradient(135deg,#2dd4bf,#14B8A6,#10b981)",
     },
